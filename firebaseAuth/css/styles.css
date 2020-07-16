@@ -63,6 +63,37 @@ body{
     font-weight: bold;
 }
 
+
+#dashboard{
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: coral;
+}
+
+.textholder{
+    margin-top: 30vh;
+}
+
+.white{
+    color: white;
+    font-size: 70px;
+    animation: fadeIn 2s;
+}
+
+.btn-black{
+    background-color: black;
+    box-shadow: 0 0 5px -1px black;
+    transition-duration: 0.3s;
+    color: white;
+}
+
+.btn-black:hover{
+    box-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+
 @media only screen and (max-width: 768px){
     .disappear{
         display: none;
@@ -70,5 +101,15 @@ body{
 
     .formbox{
         width: 70%;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
     }
 }
